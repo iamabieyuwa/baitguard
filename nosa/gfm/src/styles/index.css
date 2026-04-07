@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-primary: #064e3b; /* Calm Emerald/Hunter Green */
+  --color-accent: #34d399; /* Soft Emerald/Sage */
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  @apply bg-stone-50 text-stone-900 overflow-x-hidden;
+}
+
+.glass-panel {
+  @apply bg-white/80 backdrop-blur-md border border-white/40 shadow-lg;
+}
+
+.text-gradient {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-emerald-800 to-emerald-600;
+}
+
+.btn-primary {
+  @apply px-6 py-3 bg-gradient-to-r from-emerald-700 to-emerald-800 text-white rounded-full font-semibold shadow-md shadow-emerald-700/20 hover:shadow-lg hover:shadow-emerald-700/30 hover:scale-[1.02] transition-all duration-300;
+}
+
+.btn-secondary {
+  @apply px-6 py-3 bg-white text-emerald-800 border border-emerald-100 rounded-full font-semibold shadow-sm hover:bg-emerald-50 hover:border-emerald-200 transition-all duration-300;
+}
